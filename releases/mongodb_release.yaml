@@ -3,7 +3,6 @@
   kind: FluxHelmRelease
   metadata:
     name: mongodb
-    namespace: test
     labels:
       chart: mongodb
   spec:
