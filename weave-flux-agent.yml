@@ -1,0 +1,72 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  labels:
+    app: weave-flux
+    name: weave-flux-agent
+    weave-cloud-component: flux
+    weave-flux-component: agent
+  name: weave-flux-agent
+  namespace: weave
+spec:
+  progressDeadlineSeconds: 600
+  replicas: 1
+  revisionHistoryLimit: 2
+  selector:
+    matchLabels:
+      app: weave-flux
+      name: weave-flux-agent
+      weave-cloud-component: flux
+      weave-flux-component: agent
+  strategy:
+    type: Recreate
+  template:
+    metadata:
+      annotations:
+        prometheus.io.port: "3030"
+      labels:
+        app: weave-flux
+        name: weave-flux-agent
+        weave-cloud-component: flux
+        weave-flux-component: agent
+    spec:
+      containers:
+      - args:
+        - --token=$(WEAVE_CLOUD_TOKEN)
+        - --connect=wss://frontend.dev.weave.works/api/flux
+        - --memcached-hostname=weave-flux-memcached.weave.svc.cluster.local
+        - --git-ci-skip=true
+        - --git-url=git@github.com:foot/flux-helm-test
+        - --git-branch=master
+        - --git-label=flux-patient-sea-76
+        - --ssh-keygen-dir=/var/fluxd/ssh
+        env:
+        - name: WEAVE_CLOUD_TOKEN
+          valueFrom:
+            secretKeyRef:
+              key: token
+              name: weave-cloud
+        image: quay.io/weaveworks/flux:1.4.1
+        imagePullPolicy: IfNotPresent
+        name: flux-agent
+        terminationMessagePath: /dev/termination-log
+        terminationMessagePolicy: File
+        volumeMounts:
+        - mountPath: /etc/fluxd/ssh
+          name: git-key
+        - mountPath: /var/fluxd/ssh
+          name: keygen
+      dnsPolicy: ClusterFirst
+      restartPolicy: Always
+      schedulerName: default-scheduler
+      serviceAccount: weave-flux
+      serviceAccountName: weave-flux
+      terminationGracePeriodSeconds: 30
+      volumes:
+      - name: git-key
+        secret:
+          defaultMode: 256
+          secretName: flux-git-deploy
+      - emptyDir:
+          medium: Memory
+        name: keygen
