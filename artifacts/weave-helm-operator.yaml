@@ -31,7 +31,7 @@ spec:
       serviceAccountName: weave-flux
       containers:
       - name: weave-flux-helm-operator
-        image: 'quay.io/weaveworks/helm-operator:0.1.0-alpha'
+        image: 'quay.io/weaveworks/helm-operator:master-ed0012d'
         imagePullPolicy: IfNotPresent
         volumeMounts:
         - name: git-key
