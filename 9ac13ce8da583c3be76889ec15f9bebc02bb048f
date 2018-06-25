@@ -1,0 +1,1 @@
+{"jobID":"76754da1-e39d-9ab0-15ff-cc44f69fd665","spec":{"type":"policy","cause":{"Message":"lock it fo now.","User":"simon \u003csimon@weave.works\u003e"},"spec":{"weave:deployment/weave-flux-agent":{"add":{"locked":"true","locked_msg":"\"lock it fo now.\"","locked_user":"simon \u003csimon@weave.works\u003e"},"remove":null}}},"result":null}
