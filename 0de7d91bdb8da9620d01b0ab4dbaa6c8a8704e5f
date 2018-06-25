@@ -1,0 +1,1 @@
+{"jobID":"85740d6c-d133-faec-bc79-d6734d97db0e","spec":{"type":"policy","cause":{"Message":"i don't want it locked no mo","User":"simon@weave.works"},"spec":{"weave:deployment/weave-flux-agent":{"add":null,"remove":{"locked":"true","locked_msg":"i don't want it locked no mo","locked_user":"simon@weave.works"}}}},"result":null}
