@@ -9,6 +9,10 @@ metadata:
     weave-flux-component: agent
   name: weave-flux-agent
   namespace: weave
+  annotations:
+    flux.weave.works/locked_user: simon <simon@weave.works>
+    flux.weave.works/locked: 'true'
+    flux.weave.works/locked_msg: '"Test this version out for now."'
 spec:
   progressDeadlineSeconds: 600
   replicas: 1
