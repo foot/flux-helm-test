@@ -1,0 +1,1 @@
+{"jobID":"3b6d4a88-5517-d753-aa11-dc5054301ff8","spec":{"type":"policy","cause":{"Message":"its all good","User":"simon@weave.works"},"spec":{"weave:deployment/weave-flux-helm-operator":{"add":null,"remove":{"locked":"true","locked_msg":"its all good","locked_user":"simon@weave.works"}}}},"result":null}
