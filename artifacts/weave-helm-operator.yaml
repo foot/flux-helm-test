@@ -5,9 +5,6 @@ metadata:
   name: weave-flux-helm-operator
   annotations:
     flux.weave.works/ignore: "true"
-    flux.weave.works/locked: 'true'
-    flux.weave.works/locked_msg: I like it just the way it is.
-    flux.weave.works/locked_user: simon@weave.works
   labels:
     name: weave-flux-helm-operator
     app: weave-flux
