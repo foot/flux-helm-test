@@ -1,0 +1,1 @@
+{"jobID":"d8376b9c-fafb-4de7-e854-0b6ae0988552","spec":{"type":"policy","cause":{"Message":"test","User":"simon@weave.works"},"spec":{"weave:deployment/weave-flux-agent":{"add":{"automated":"true","automated_msg":"test","automated_user":"simon@weave.works"},"remove":null}}},"result":null}
