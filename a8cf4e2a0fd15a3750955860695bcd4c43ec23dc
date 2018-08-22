@@ -1,0 +1,1 @@
+{"jobID":"6a07548e-4acc-4cca-83d2-e787153ff15f","spec":{"type":"policy","cause":{"Message":"","User":"simon \u003csimon@weave.works\u003e"},"spec":{"test:fluxhelmrelease/mariadb":{"add":null,"remove":{"tag.chart-image":"glob:10.*"}}}},"result":null}
