@@ -1,0 +1,1 @@
+{"jobID":"f329f212-870c-de99-b7e0-92716512da17","spec":{"type":"policy","cause":{"Message":"hh","User":"simon \u003csimon@weave.works\u003e"},"spec":{"test:fluxhelmrelease/mariadb":{"add":{"locked":"true","locked_msg":"\"hh\"","locked_user":"simon \u003csimon@weave.works\u003e"},"remove":null}}},"result":null}
