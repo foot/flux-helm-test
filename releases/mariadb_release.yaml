@@ -6,6 +6,10 @@ metadata:
   namespace: test
   labels:
     chart: mariadb
+  annotations:
+    flux.weave.works/locked_user: simon <simon@weave.works>
+    flux.weave.works/locked: 'true'
+    flux.weave.works/locked_msg: '"hh"'
 spec:
   chartGitPath: mariadb
   values:
