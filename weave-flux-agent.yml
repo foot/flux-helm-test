@@ -10,9 +10,6 @@ metadata:
   name: weave-flux-agent
   namespace: weave
   annotations:
-    flux.weave.works/locked_user: simon <simon@weave.works>
-    flux.weave.works/locked: 'true'
-    flux.weave.works/locked_msg: '"Test this version out for now."'
     flux.weave.works/automated: 'true'
     flux.weave.works/automated_msg: test
     flux.weave.works/automated_user: simon@weave.works
