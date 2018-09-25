@@ -8,9 +8,6 @@ metadata:
     chart: mariadb
   annotations:
     flux.weave.works/tag.chart-image: glob:10.2*
-    flux.weave.works/locked: 'true'
-    flux.weave.works/locked_msg: '"Lock it for now!"'
-    flux.weave.works/locked_user: simon <simon@weave.works>
 spec:
   chartGitPath: mariadb
   values:
