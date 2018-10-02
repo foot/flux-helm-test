@@ -6,10 +6,6 @@ metadata:
   namespace: test
   labels:
     chart: mongodb
-  annotations:
-    flux.weave.works/locked_user: Simo <simon@weave.works>
-    flux.weave.works/locked: 'true'
-    flux.weave.works/locked_msg: '"Lock this dude"'
 spec:
   chartGitPath: mongodb
   releaseName: mongodb-database
