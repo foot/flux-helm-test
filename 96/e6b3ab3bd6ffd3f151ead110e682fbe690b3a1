@@ -1,0 +1,1 @@
+{"jobID":"55265399-a96d-72ed-ca06-2a56f6d9d971","spec":{"type":"policy","cause":{"Message":"r","User":"Simo \u003csimon@weave.works\u003e"},"spec":{"test:fluxhelmrelease/mongodb":{"add":null,"remove":{"locked":"true","locked_msg":"\"r\"","locked_user":"Simo \u003csimon@weave.works\u003e"}}}},"result":null}
