@@ -51,7 +51,7 @@ spec:
             secretKeyRef:
               key: token
               name: weave-cloud
-        image: quay.io/weaveworks/flux:master-18efd6a
+        image: quay.io/weaveworks/flux:master-ebc78e3
         imagePullPolicy: IfNotPresent
         name: flux-agent
         terminationMessagePath: /dev/termination-log
