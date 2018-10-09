@@ -1,0 +1,1 @@
+{"jobID":"d5a66394-db34-8e2a-7937-6529a2587969","spec":{"type":"policy","cause":{"Message":"derp","User":"undefined"},"spec":{"test:fluxhelmrelease/mariadb":{"add":null,"remove":{"locked":"true","locked_msg":"derp"}},"test:fluxhelmrelease/mongodb":{"add":null,"remove":{"locked":"true","locked_msg":"derp"}}}},"result":null}
