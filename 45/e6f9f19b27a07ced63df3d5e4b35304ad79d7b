@@ -1,0 +1,1 @@
+{"jobID":"7e18a4b9-883f-802e-eef5-93c745359d52","spec":{"type":"policy","cause":{"Message":"dock","User":"Simo \u003csimon@weave.works\u003e"},"spec":{"test:fluxhelmrelease/mariadb":{"add":{"locked":"true","locked_msg":"\"dock\"","locked_user":"Simo \u003csimon@weave.works\u003e"},"remove":null}}},"result":null}
