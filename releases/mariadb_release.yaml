@@ -8,7 +8,6 @@ metadata:
     chart: mariadb
   annotations:
     flux.weave.works/tag.chart-image: glob:10.2*
-    flux.weave.works/automated: 'true'
     flux.weave.works/locked_user: Simo <simon@weave.works>
 spec:
   chartGitPath: mariadb
