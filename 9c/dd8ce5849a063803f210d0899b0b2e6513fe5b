@@ -1,0 +1,1 @@
+{"jobID":"17c4f024-94b0-f890-980e-fa9220a231ee","spec":{"type":"policy","cause":{"Message":"","User":"Simo \u003csimon@weave.works\u003e"},"spec":{"test:fluxhelmrelease/mariadb":{"add":null,"remove":{"automated":"true"}}}},"result":null}
